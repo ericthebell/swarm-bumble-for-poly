@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  /* Honey — primary amber */
+  --color-honey-50: #FFF9EB;
+  --color-honey-100: #FFF0C7;
+  --color-honey-200: #FFE08A;
+  --color-honey-300: #FFD04D;
+  --color-honey-400: #FFC020;
+  --color-honey-500: #F5A623;
+  --color-honey-600: #D98B0A;
+  --color-honey-700: #B36D06;
+  --color-honey-800: #8D5408;
+  --color-honey-900: #6B3F0B;
+
+  /* Pollen — secondary warm */
+  --color-pollen-50: #FFFBEB;
+  --color-pollen-100: #FEF3C7;
+  --color-pollen-400: #FBBF24;
+  --color-pollen-500: #F59E0B;
+
+  /* Nectar — like/match pink-red */
+  --color-nectar-50: #FFF1F2;
+  --color-nectar-100: #FFE4E6;
+  --color-nectar-400: #FB7185;
+  --color-nectar-500: #F43F5E;
+  --color-nectar-600: #E11D48;
+
+  /* Hive — neutrals */
+  --color-hive-50: #F8FAFC;
+  --color-hive-100: #F1F5F9;
+  --color-hive-200: #E2E8F0;
+  --color-hive-300: #CBD5E1;
+  --color-hive-400: #94A3B8;
+  --color-hive-500: #64748B;
+  --color-hive-600: #475569;
+  --color-hive-700: #334155;
+  --color-hive-800: #1E293B;
+  --color-hive-900: #0F172A;
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-display: 'Fredoka', sans-serif;
+
+  /* Border radius */
+  --radius-card: 1.25rem;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Base styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-hive-800);
+  background: var(--color-hive-50);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}

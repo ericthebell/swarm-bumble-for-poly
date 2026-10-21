@@ -1,0 +1,15 @@
+export const ROUTES = {
+  LANDING: '/',
+  LOGIN: '/login',
+  SIGNUP: '/signup',
+  ONBOARDING: '/onboarding',
+  DISCOVER: '/discover',
+  MATCHES: '/matches',
+  CHAT: '/matches/:matchId',
+  PROFILE: '/profile',
+  PROFILE_EDIT: '/profile/edit',
+  USER_PROFILE: '/user/:userId',
+  PARTNERS: '/partners',
+  CONSTELLATION: '/constellation',
+  SETTINGS: '/settings',
+} as const
